@@ -27,13 +27,37 @@ public class Practica_1 {
         
         System.out.print("Ingresa la cadena:");
         cadena=scanner.next();
-        char[] c = new char[cadena.length()];
-        while(conti=true&&c!=null){
+        char[] c = cadena.toCharArray();
+        while(conti==true&&c!=null){
             switch(est){
                 case 0:
-                    if(c==)
+                    if(c[i]=='@'){
+                        i++;
+                        est++;
+                    }
+                    else if(c[i]=='$'){
+                        i++;
+                        est++;
+                    }
+                    else {
+                        System.out.print("Valor invalido");
+                        conti=false;
+                    }
+                    break;
+                case 1:
+                    if(c[i]=='#'){
+                        i++;
+                        est++;
+                    }
+                    else if(c[i]=='$'){
+                        i++;
+                        est++;
+                    }
+                    else {
+                        conti=false;
+                        System.out.print("Valor invalido");
+                    }
             }
         }
     }
-    
 }
