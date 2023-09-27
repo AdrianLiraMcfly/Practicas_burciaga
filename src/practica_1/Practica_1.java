@@ -29,6 +29,7 @@ public class Practica_1 {
         System.out.print("Ingresa la cadena:");
         cadena=scanner.next();
         char[] c = cadena.toCharArray();
+        //las cadenas de lo que se ocupara verificar
         String[] Vmay={"A","E","I","O","U"},Vmin={"a","e","i","o","u"}, Dig={"1","2","3","4","5","6","7","8","9"}, imp={"1","3","5","7","9"};
         while(conti==true&&c!=null){
             switch(est){
@@ -41,8 +42,9 @@ public class Practica_1 {
                     }
                     else if(c[i]=='$'){
                         i++;
+                        //Si detecta que es dollar se salta el segundo case para evitar la verificacion del #
                         est=est+2;
-                        //Boolean que verifica si al final sera mayus o minus la vocal
+                        //Boolean que verifica si al final sera mayus o minus la vocal, para ser exacto en el case 5
                         dollar=true;
                     }
                     else {
@@ -61,6 +63,7 @@ public class Practica_1 {
                     }
                         break;
                     case 2:
+                        //a partir de aqui habra un boolean que se activara en caso de detectar el valor que se busca, dado lo contrario: cuello
                         boolean haydig= false;
                         for(int k=0; k<c.length;k++){
                           char dig=c[k];
@@ -172,7 +175,7 @@ public class Practica_1 {
                     }
                         }
                     break;
-            
+            //a la primera que me preguntes que significa algo neta que te arranco un huevo vielma
         
     }
 }
